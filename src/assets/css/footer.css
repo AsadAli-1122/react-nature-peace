@@ -1,0 +1,51 @@
+.footer .main-div{
+    position: relative;
+  }
+  .footer .main-div input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .footer .main-div h1{
+    position: relative;
+  }
+
+  .footer .main-div .content-div{
+    max-height:0px;
+    overflow: hidden;
+    transition:max-height 0.5s;
+    background-color: white;
+  }
+
+  .footer input[type="checkbox"]:checked ~ h1 ~ .content-div {
+    max-height: 300px;
+  }
+
+  .footer-email-input{
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid rgb(203, 213, 255);
+  }
+  .footer-email-input:hover{
+    border: 1px solid rgb(203, 213, 255);
+  }
+
+  .footer-email-input:focus-within {
+    border: 1px solid rgb(203, 213, 255);
+  }
+
+  
+  .footer .icon {
+    transition: transform 0.7s ease;
+  }
+  
+  .footer .icon-link:hover .icon {
+    transform: rotateY(360deg); /* Adjust the rotation angle as per your requirement */
+  }
+  

@@ -1,0 +1,30 @@
+.side .icon {
+    transition: transform 0.7s ease;
+  }
+  
+  .side .icon-link:hover .icon {
+    transform: rotateY(360deg); /* Adjust the rotation angle as per your requirement */
+  }
+  
+
+  .pulse-link {
+    display: inline-block;
+}
+
+.pulse-link:hover {
+    
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

@@ -1,0 +1,21 @@
+.link-animate{
+    color: black;
+    position: relative;
+}
+
+.link-animate::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.link-animate:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}

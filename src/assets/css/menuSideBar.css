@@ -1,0 +1,7 @@
+.menu-side-bar .icon {
+    transition: transform 0.7s ease;
+  }
+  
+  .menu-side-bar .icon-link:hover .icon {
+    transform: rotateY(360deg); /* Adjust the rotation angle as per your requirement */
+  }
