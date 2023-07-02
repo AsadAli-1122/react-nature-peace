@@ -86,7 +86,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     New Arrivals
                   </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     Best Sellers
                   </Link>
@@ -102,7 +102,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     Gifts
                   </Link>
@@ -110,7 +110,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     Sales
                   </Link>
@@ -118,7 +118,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     Plant Drop
                   </Link>
@@ -150,7 +150,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     About Us
                   </Link>
@@ -158,7 +158,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     Terms of Service
                   </Link>
@@ -166,7 +166,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     Privacy Policy
                   </Link>
@@ -174,7 +174,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     Shipping & Returns
                   </Link>
@@ -206,7 +206,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     My Account
                   </Link>
@@ -214,7 +214,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     Careers
                   </Link>
@@ -222,7 +222,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     Contact
                   </Link>
@@ -230,7 +230,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     FAQ
                   </Link>
@@ -238,7 +238,7 @@ const Footer = () => {
                 <li>
                   <Link
                     to="/"
-                    className="link-animate before:bg-slate-400 before:h-[1px]"
+                    className="link-animate before:bg-black before:h-[1.5px]"
                   >
                     Visit Us
                   </Link>
@@ -285,33 +285,33 @@ const Footer = () => {
               <div className="flex justify-between items-center max-w-xs ml-auto">
                 <Link
                   to="/"
-                  className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+                  className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
                 >
-                  <i class="mx-auto fa-brands fa-facebook-f icon"></i>
+                  <i className="mx-auto fa-brands fa-facebook-f icon"></i>
                 </Link>
                 <Link
                   to="/"
-                  className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+                  className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
                 >
-                  <i class="mx-auto fa-brands fa-twitter icon"></i>
+                  <i className="mx-auto fa-brands fa-twitter icon"></i>
                 </Link>
                 <Link
                   to="/"
-                  className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+                  className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
                 >
-                  <i class="mx-auto fa-brands fa-instagram icon"></i>
+                  <i className="mx-auto fa-brands fa-instagram icon"></i>
                 </Link>
                 <Link
                   to="/"
-                  className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+                  className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
                 >
-                  <i class="mx-auto fa-brands fa-tiktok icon"></i>
+                  <i className="mx-auto fa-brands fa-tiktok icon"></i>
                 </Link>
                 <Link
                   to="/"
-                  className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+                  className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
                 >
-                  <i class="mx-auto fa-brands fa-linkedin-in icon"></i>
+                  <i className="mx-auto fa-brands fa-linkedin-in icon"></i>
                 </Link>
               </div>
             </div>
@@ -319,15 +319,15 @@ const Footer = () => {
         </div>
         {/* <hr className="md:hidden" /> */}
       </div>
-      <div className="px-4 md:px-10 flex flex-col space-y-2 mt-8 mb-4">
-        <div className="flex justify-between">
+      <div className="px-4 md:px-10 flex flex-col-reverse md:flex-col justify-center space-y-2 mt-8 mb-4">
+        <div className="flex justify-center md:justify-between">
           <p className="text-xs">© 2023, Be Yours. All rights reserved.</p>
           <span></span>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-center md:justify-between items-center pb-5 md:pd-0">
           <Link
             to="/"
-            className="link-animate text-xs pb-1 before:bg-slate-300 before:h-[1px] -z-10"
+            className="link-animate text-xs pb-1 before:bg-slate-300 before:h-[1px] -z-10 hidden md:block"
           >
             Powered by Shopify
           </Link>

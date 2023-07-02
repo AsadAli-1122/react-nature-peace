@@ -9,33 +9,33 @@ const Side = () => {
         <div className="flex flex-col items-center space-y-2">
           <Link
             to="/"
-            className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+            className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
           >
-            <i class="mx-auto fa-brands fa-facebook-f icon"></i>
+            <i className="mx-auto fa-brands fa-facebook-f icon"></i>
           </Link>
           <Link
             to="/"
-            className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+            className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
           >
-            <i class="mx-auto fa-brands fa-twitter icon"></i>
+            <i className="mx-auto fa-brands fa-twitter icon"></i>
           </Link>
           <Link
             to="/"
-            className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+            className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
           >
-            <i class="mx-auto fa-brands fa-instagram icon"></i>
+            <i className="mx-auto fa-brands fa-instagram icon"></i>
           </Link>
           <Link
             to="/"
-            className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+            className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
           >
-            <i class="mx-auto fa-brands fa-tiktok icon"></i>
+            <i className="mx-auto fa-brands fa-tiktok icon"></i>
           </Link>
           <Link
             to="/"
-            className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+            className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
           >
-            <i class="mx-auto fa-brands fa-linkedin-in icon"></i>
+            <i className="mx-auto fa-brands fa-linkedin-in icon"></i>
           </Link>
           <div className="pt-12">
             <p className="-rotate-90 whitespace-nowrap text-sm font-semibold  tracking-wider">

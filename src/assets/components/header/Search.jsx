@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Search = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(true);
   const [search , setSearch] = useState('')
+
+  useEffect(() => {
+    document.body.style.overflow = isSearchOpen ? 'auto' : 'hidden';
+  
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isSearchOpen]);
 
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
@@ -15,7 +23,7 @@ const Search = () => {
         onClick={toggleSearch}
       ></i>
       <div
-        className={`bg-slate-100 fixed h-full bottom-0 left-0 top-0 right-0 duration-500 ease-in-out overflow-hidden ${
+        className={`bg-slate-100 fixed h-full bottom-0 left-0 top-0 right-0 duration-500 ease-in-out overflow-hidden z-[1] ${
           isSearchOpen ? "max-h-0" : "max-h-screen"
         }`}
       >

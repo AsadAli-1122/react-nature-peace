@@ -8,10 +8,13 @@ const Main = ({ children }) => {
     <>
       <div className="">
         <Side />
-        <Header />
+        <div className="absolute top-0 left-0 right-0 z-[1]">
+          <Header />
+        </div>
 
         {children}
 
+        <hr className="hidden md:block mb-8" />
         <Footer />
       </div>
     </>

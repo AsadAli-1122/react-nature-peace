@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import "../../css/menuSideBar.css";
 
 const MenuSideBar = () => {
@@ -24,6 +24,14 @@ const MenuSideBar = () => {
     setIsExplore(!isExplore);
   };
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'auto' : 'hidden';
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
+
   return (
     <>
       <div className="md:hidden menu-side-bar">
@@ -35,18 +43,18 @@ const MenuSideBar = () => {
           className={`${
             isOpen
               ? "hidden"
-              : "block fixed bg-black opacity-30 top-0 bottom-0 left-0 right-0"
+              : "block fixed bg-black opacity-30 top-0 bottom-0 left-0 right-0 cursor-pointer"
           }`}
           onClick={toggleMenu}
         ></div>
         <div
-          className={`bg-white fixed w-full max-w-[400px] left-0 flex top-0 h-full duration-500 ease-in-out z-[2] overflow-auto ${
+          className={`bg-white fixed w-full max-w-[400px] left-0 flex top-0 h-full duration-500 ease-in-out z-[2] ${
             isOpen ? "-ml-[400px]" : "ml-0"
           }`}
         >
           <div className="w-full h-full">
             <div className="flex justify-between items-center pr-6 pl-4 py-2">
-              <Link to='/'>
+              <Link to='/' >
           <img
               src="/images/main-logo.png"
               alt="nature peace"
@@ -61,7 +69,7 @@ const MenuSideBar = () => {
 
             <hr />
             <div className="h-full w-full flex flex-col justify-between text-slate-500">
-              <div className="w-full flex flex-col text-lg">
+              <div className="w-full flex flex-col text-lg overflow-auto">
                 <div className="flex justify-end">
                   <div
                     className={`absolute bg-slate-50 h-full w-full max-h-full duration-200 ml-auto ${
@@ -252,40 +260,47 @@ const MenuSideBar = () => {
                 </span>
               </div>
               <div className="flex justify-between items-center w-full mb-[80px] px-4 border-t pt-4 z-[1] bg-white">
-                <div>
+                <NavLink to="/login"
+              className={({ isActive }) =>
+                `before:h-[1.5px] tracking-wider px-1 text-black ${
+                  isActive
+                    ? "border-b-[2px] border-black "
+                    : "link-animate before:bg-black"
+                }`
+              } >
                   <i className="fa-regular fa-user mr-2"></i>
                   <span>Login</span>
-                </div>
+                </NavLink>
                 <div className="flex items-center space-x-2">
                   <Link
                     to="/"
-                    className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+                    className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
                   >
-                    <i class="mx-auto fa-brands fa-facebook-f icon"></i>
+                    <i className="mx-auto fa-brands fa-facebook-f icon"></i>
                   </Link>
                   <Link
                     to="/"
-                    className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+                    className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
                   >
-                    <i class="mx-auto fa-brands fa-twitter icon"></i>
+                    <i className="mx-auto fa-brands fa-twitter icon"></i>
                   </Link>
                   <Link
                     to="/"
-                    className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+                    className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
                   >
-                    <i class="mx-auto fa-brands fa-instagram icon"></i>
+                    <i className="mx-auto fa-brands fa-instagram icon"></i>
                   </Link>
                   <Link
                     to="/"
-                    className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+                    className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
                   >
-                    <i class="mx-auto fa-brands fa-tiktok icon"></i>
+                    <i className="mx-auto fa-brands fa-tiktok icon"></i>
                   </Link>
                   <Link
                     to="/"
-                    className="icon-link w-6 h-6 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
+                    className="icon-link w-8 h-8 flex justify-between items-center rounded-full hover:text-white duration-200 hover:bg-black"
                   >
-                    <i class="mx-auto fa-brands fa-linkedin-in icon"></i>
+                    <i className="mx-auto fa-brands fa-linkedin-in icon"></i>
                   </Link>
                 </div>
               </div>

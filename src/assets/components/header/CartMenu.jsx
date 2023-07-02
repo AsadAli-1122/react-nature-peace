@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const CartMenu = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -6,6 +6,14 @@ const CartMenu = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'auto' : 'hidden';
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
 
   return (
     <>
@@ -17,14 +25,14 @@ const CartMenu = () => {
         <div
           className={`${
             isOpen
-              ? "hidden"
-              : "block fixed bg-black opacity-30 top-0 bottom-0 left-0 right-0 cursor-pointer"
+              ? 'hidden'
+              : 'block fixed bg-black opacity-30 top-0 bottom-0 left-0 right-0 cursor-pointer'
           }`}
           onClick={toggleMenu}
         ></div>
         <div
-          className={`bg-white fixed w-full max-w-[500px] right-0 flex top-0 h-full duration-500 ease-in-out z-[2] overflow-auto ${
-            isOpen ? "-mr-[500px]" : "ml-0"
+          className={`bg-white fixed w-full max-w-[500px] right-0 flex top-0 h-full duration-500 ease-in-out z-[2] ${
+            isOpen ? '-mr-[500px]' : 'ml-0'
           }`}
         >
           <div className="w-full h-full">
@@ -36,7 +44,7 @@ const CartMenu = () => {
               ></i>
             </div>
             <hr />
-            <div className="h-full w-full flex flex-col justify-between text-slate-500">
+            <div className="h-full w-full flex flex-col justify-between text-slate-500  overflow-auto">
               {/* Cart content */}
             </div>
           </div>
